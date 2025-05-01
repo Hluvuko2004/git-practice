@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>mLab Profile</title>
+  <style>
+    :root {
+      --blue: #1e40af;
+      --yellow: #facc15;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: var(--white);
+      color: var(--blue);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--blue);
+      color: var(--white);
+      padding: 2rem 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    header img {
+      width: 100px;
+      border-radius: 50%;
+      border: 3px solid var(--yellow);
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    section {
+      padding: 1rem;
+      border-left: 5px solid var(--yellow);
+      background-color: #f9fafb;
+    }
+
+    section h2 {
+      color: var(--blue);
+      margin-bottom: 0.5rem;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .skills li {
+      background-color: var(--blue);
+      color: var(--white);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .skills li:hover {
+      transform: scale(1.05);
+      background-color: var(--yellow);
+      color: var(--blue);
+    }
+
+    footer {
+      background-color: var(--blue);
+      color: var(--white);
+      padding: 1rem;
+      text-align: center;
+    }
+
+    .socials a {
+      color: var(--yellow);
+      margin: 0 0.5rem;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .socials a:hover {
+      color: var(--white);
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Hluvuko Maluleke - mLab</h1>
+    <img src="Mlab.png" alt="Profile Picture" />
+  </header>
+
+  <div class="container">
+    <section class="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a TUT student willing to lean a lot from MLab for future.
+      </p>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>React Native</li>
+        <li>Flutter</li>
+        <li>Git & GitHub</li>
+        <li>UI/UX Design</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer>
+    <p>Connect with me</p>
+    <div class="socials">
+      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+      <a href="https://github.com" target="_blank">GitHub</a>
+      <a href="https://twitter.com" target="_blank">Twitter</a>
+    </div>
+  </footer>
+
+</body>
+</html>
